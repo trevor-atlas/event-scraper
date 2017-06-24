@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "typeRoots": ["node_modules/@types"],
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es6"
+  },
+  "files": ["**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PLUMBUS",
+  "version": "1.0.0",
+  "description": "A generic scraper of websites",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch:ts",
+    "watch:ts": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/app.ts"
+  },
+  "author": "Trevor Allen",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jsdom": "^11.0.0",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.2.4",
+    "@types/jsdom": "^11.0.0",
+    "typescript": "^2.3.4",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.1.0"
+  }
+}
