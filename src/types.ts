@@ -11,7 +11,10 @@ export class LocalEvent {
 	additionalInfo: string
 }
 
-export interface DomMapper {
-	mapDomToJson(dom: JSDOM): string
-	mapDom(Event: JQuery.PlainObject): LocalEvent
+export type MapOptions = {
+	name: string
+	url: string
+	website: string
+	listSelector: string
+	mapper(events: Element[]): LocalEvent[]
 }
