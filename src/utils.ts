@@ -2,10 +2,10 @@ import { LocalEvent, MapOptions } from './types'
 import { JSDOM as domParser } from 'jsdom'
 import { JSDOM } from '@types/jsdom'
 
-export const obj = (e: Element): boolean => e !== null
-export const text = (e: Element): string => obj(e) ? e.textContent : ''
-export const html = (e: Element): string => obj(e) ? e.innerHTML : ''
-export const href = (e: Element): string => obj(e) ? e.getAttribute('href') : ''
+export const isElement = (e: Element): boolean => e !== null
+export const text = (e: Element): string => isElement(e) ? e.textContent : ''
+export const html = (e: Element): string => isElement(e) ? e.innerHTML : ''
+export const href = (e: Element): string => isElement(e) ? e.getAttribute('href') : ''
 export const bool = (str: string): boolean => !!str
 
 /**
