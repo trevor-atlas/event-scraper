@@ -14,7 +14,7 @@ plumbus({
 plumbus({
 		name: 'DC Improv',
 		website: 'https://www.dcimprov.com/',
-		url: 'https://www.dcimprov.com/schedule.html',
+		url: 'https://dcimprov-com.seatengine.com/events',
 		listSelector: '#main article.twothirds .leading',
 		mapper: map930
 	})
